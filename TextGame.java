@@ -122,7 +122,7 @@ public class TextGame implements Serializable /*штука что бы рабо�
                 buildHouse();
                 break;
             case 4:
-                System.out.println("Введите координаты точки для захвата (строка и столбец, разделенные пробелом):");
+                System.out.println("Enter the coordinates of the point to capture (row and column separated by a space):");
                 int row = scanner.nextInt();
                 int col = scanner.nextInt();
                 capturePoint(row - 1, col - 1);
@@ -409,7 +409,7 @@ public class TextGame implements Serializable /*штука что бы рабо�
         return savedFiles;
     }
 
-    public static void printText() {
+    public static void manual() {
         System.out.println("1. You start in the lower right corner, and your opponent starts in the upper left corner.\n" +
                 "2. Your territory is marked as \"0\".\n" +
                 "3. The opponent's territory is marked as \"-1\".\n" +
@@ -425,7 +425,7 @@ public class TextGame implements Serializable /*штука что бы рабо�
     public static void main(String[] args) {
         System.out.println();
         TextGame textGame = new TextGame();
-        printText();
+        manual();
         // Предоставить пользователю выбор между началом новой игры и загрузкой сохраненной
         boolean isNewGame = getUserChoice();
 
