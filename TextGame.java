@@ -435,6 +435,7 @@ public class TextGame implements Serializable /*штука что бы рабо�
         } else {
             // Загрузить сохраненную игру
             textGame.loadSavedGame();
+            textGame.playGame();
         }
     }
 }
